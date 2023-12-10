@@ -3,6 +3,7 @@
 
 // configuracion basica
 
+#define UsarAudio  1 // "0" para NO, "1" para SI.
 char *AudioAEjecutar= "/run.wav";
 
 // Configuracion Avanzada con IFTTT

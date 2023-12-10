@@ -34,7 +34,7 @@ void setup()
   pinMode(PIRPin, INPUT);
   digitalWrite(LEDPin, led_off);
 
-  if (!SD.begin(SD_ChipSelectPin)) {
+  if (UsarAudio == 1 && !SD.begin(SD_ChipSelectPin)) {
     Serial.println("Fallo en la inicialización de la SD");
     digitalWrite(LEDPin, led_on);
     return;
@@ -45,7 +45,45 @@ void setup()
 
 void loop()
 {
+  if (UsarAudio == 0 && UsarIFTTT == 1)
+  {
+    BasicoConInternet();
+  }
+  else
+  {
+    CodigoCompleto();
+  }
 
+}
+
+void BasicoConInternet() {
+
+  val = digitalRead(PIRPin);
+
+  if (val == HIGH)   //si está activado
+  {
+    digitalWrite(LEDPin, led_on);  //LED ON
+    if (pirState == LOW)  //si previamente estaba apagado
+    {
+      Serial.println("Sensor activado");
+      pirState = HIGH;
+      enviarSolicitudIFTTT();
+    }
+  }
+  else   //si esta desactivado
+  {
+    digitalWrite(LEDPin, led_off); // LED OFF
+    if (pirState == HIGH)  //si previamente estaba encendido
+    {
+      Serial.println("Sensor parado");
+      pirState = LOW;
+    }
+  }
+
+}
+
+
+void CodigoCompleto() {
   if (wav->isRunning()) {
     if (!wav->loop())
     {
