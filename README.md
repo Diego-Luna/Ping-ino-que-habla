@@ -1,1 +1,26 @@
-# Colaboracion de MoonMakers y Nada Que Hacer
+# Proyecto de Detección de Movimiento con NodeMCU y LM386
+
+## Descripción
+Este proyecto utiliza un NodeMCU para detectar movimiento a través de un sensor PIR y, en respuesta, reproduce un archivo de audio almacenado en una tarjeta SD. La señal de audio se amplifica utilizando un circuito con un LM386.
+
+## Creadores
+- **MoonMakers**
+- **Nada que hacer**
+
+
+[![MoonMakers](https://yt3.googleusercontent.com/ytc/APkrFKaYfTydgBwDyVQie8Ydaq5RVH_9_k-87lEnMcHvAQ=s176-c-k-c0x00ffffff-no-rj-mo)](https://www.youtube.com/@NadaQueHacer)
+[![MoonMakers](https://yt3.googleusercontent.com/7W7Ap3W9coRjVPdUCT2_C6HjXWZPdG7X7fq7T01SYlBFuq8G52CiA03x_4d2duYNLXkKKeTxKg=s176-c-k-c0x00ffffff-no-rj)](https://www.youtube.com/@MoonMakers)
+
+
+## Esquemático de Conexiones
+![Esquemático](URL_DE_LA_IMAGEN_DEL_ESQUEMÁTICO)
+
+## Componentes
+- NodeMCU
+- Sensor PIR
+- LM386 Amplificador
+- Tarjeta SD
+- Bocina
+
+## Código Fuente
+El código fuente del proyecto está diseñado para activar la reproducción de audio cuando se detecta movimiento.
