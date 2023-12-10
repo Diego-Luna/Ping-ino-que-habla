@@ -12,8 +12,11 @@ Este proyecto utiliza un NodeMCU para detectar movimiento a través de un sensor
 [![MoonMakers](https://yt3.googleusercontent.com/7W7Ap3W9coRjVPdUCT2_C6HjXWZPdG7X7fq7T01SYlBFuq8G52CiA03x_4d2duYNLXkKKeTxKg=s176-c-k-c0x00ffffff-no-rj)](https://www.youtube.com/@MoonMakers)
 
 
-## Esquemático de Conexiones
-![Esquemático](URL_DE_LA_IMAGEN_DEL_ESQUEMÁTICO)
+## Esquemático de Conexiones del proyecto basico
+![Esquemático](imgs/proyecto-basico.png)
+
+## Esquemático de Conexiones del proyecto con la bocina
+![Esquemático](imgs/protecto-pro.png)
 
 ## Componentes
 - NodeMCU
