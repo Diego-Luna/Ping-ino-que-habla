@@ -27,3 +27,7 @@ Este proyecto utiliza un NodeMCU para detectar movimiento a través de un sensor
 
 ## Código Fuente
 El código fuente del proyecto está diseñado para activar la reproducción de audio cuando se detecta movimiento.
+
+### Librerias
+- [ESP8266Audio](https://github.com/earlephilhower/ESP8266Audio)
+- [SD](https://github.com/arduino-libraries/SD)
